@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap');
+html{
+    background-color: rgb(192, 192, 192);
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 62px;
+}
+body{
+    margin: 0px;
+}
+main{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+#Calculatrice{
+    width: 800px;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black 2px;
+
+}
+#result{
+    width: 800px;
+    height: 200px;
+    border-bottom: solid 2px black;
+}
+.case{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.case2{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+
+}
+html .case:hover{
+    background-color: rgba(104, 104, 104, 0.293);
+    cursor: pointer;
+}
+html .case2:hover{
+    background-color: rgba(104, 104, 104, 0.293);
+    cursor: pointer;
+}
+
+
+.ope{
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
