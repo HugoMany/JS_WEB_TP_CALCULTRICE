@@ -1,0 +1,155 @@
+:root {
+    --back: #8492a8;
+    --white: #f0f0f0;
+    --pomme: #84b988;
+    --black: #000000;
+    --gray: #acb4ab;
+    --yellow: #e4c410;
+    /* Rouge Tesla */
+    --font-size-1: 2rem;
+}
+
+body {
+    background-color: var(--back);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.content {
+    background-color: var(--back);
+    width: 500px;
+    height: 650px;
+    position: absolute;
+    padding: 2rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.display {
+    background-color: var(--white);
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+    font-size: 2rem;
+    color: var(--black);
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#result,
+#calcul {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+#result {
+    margin-top: -3rem;
+}
+
+#calcul {
+    margin-top: 1.5rem;
+}
+
+.btnContainer {
+    background-color: var(--back);
+    height: 70%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnRow {
+    width: 500px;
+    height: 75px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.num,
+.operator,
+.equal,
+.clear,
+.del {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: var(--font-size-1);
+    height: 100%;
+}
+
+.num {
+    width: 20%;
+    background-color: var(--white);
+    color: var(--black);
+    transition: all 0.4s;
+}
+
+.num:hover {
+    background-color: var(--pomme);
+    color: var(--back);
+    box-shadow: none;
+    transition: all 0.4s;
+}
+
+.operator {
+    width: 20%;
+    background-color: var(--pomme);
+    color: var(--white);
+    transition: 0.4s;
+}
+
+.operator:hover {
+    background-color: var(--black);
+    box-shadow: none;
+    transition: all 0.4s;
+}
+
+.equal {
+    width: 45%;
+}
+
+.del,
+.clear {
+    width: max-content;
+    padding: 0 10px;
+}
+
+.del,
+.clear,
+.equal {
+    transition: 0.4s;
+}
+
+.equal:hover {
+    background-color: var(--gray);
+    color: var(--black);
+}
+
+.clear:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.del:hover {
+    background-color: var(--pomme);
+    color: var(--black);
+}
+
+.equal:hover,
+.clear:hover,
+.del:hover {
+    box-shadow: none;
+}
